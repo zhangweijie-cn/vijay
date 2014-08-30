@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.redirect('http://zhangweijie.cn');
+  res.render('index');
 });
 
 router.get('/mx4', function (req, res) {
