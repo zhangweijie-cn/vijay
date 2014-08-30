@@ -3,18 +3,16 @@
   <head>
     <meta charset="utf-8" />
     <title>Vijay's App</title>
-    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=YOUR APPKEY" type="text/javascript" charset="utf-8"></script>
+    <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1258831724" type="text/javascript" charset="utf-8"></script>
     <script>
-        WB2.anyWhere(function (W) {
+        WB2.anyWhere(function(W){
             W.widget.connectButton({
                 id: "wb_connect_btn",
-                type: '3,2',
-                callback: {
-                    login: function (o) { //登录后的回调函数
-                        alert("login: " + o.screen_name)
+                type:"3,2",
+                callback : {
+                    login:function(o){	//登录后的回调函数
                     },
-                    logout: function () { //退出后的回调函数
-                        alert('logout');
+                    logout:function(){	//退出后的回调函数
                     }
                 }
             });
