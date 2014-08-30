@@ -17,9 +17,22 @@
                 }
             });
         });
+
+        WB2.anyWhere(function(W){
+            W.parseCMD("/users/show.json", function(sResult, bStatus){
+                try{
+                    //to do something...
+                }catch(e){}
+            },{
+                uid: '123456789'
+            },{
+                method: 'get'
+            });
+        });
     </script>
   </head>
 <body>
 <div id="wb_connect_btn"></div>
+<wb:share-button type="button" size="middle"> </wb:share-button>
 </body>
 </html>
